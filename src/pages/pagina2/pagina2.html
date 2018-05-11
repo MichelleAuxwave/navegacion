@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Pagina 2</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Enviando con Evento</h1>
+  <ion-list>
+    <ion-item *ngFor="let sinthe of sinthes"
+      (click)="irPagina3( sinthe )">
+      {{ sinthe.marca }}
+    </ion-item>
+  </ion-list>
+
+  <h1>Enviando con HTML</h1>
+  <ion-list>
+    <ion-item *ngFor="let sinthe of sinthes"
+      [navPush]="pagina3" [navParams]="{ 'sint': sinthe }">
+      {{ sinthe.marca }}
+    </ion-item>
+  </ion-list>
+</ion-content>
