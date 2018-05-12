@@ -9,4 +9,10 @@
 
 <ion-content padding>
 <h3 text-center>{{ sint.modelo }}</h3>
+    <button ion-button block color="primary"
+            (click)="irAtras()">Ir atras con evento</button>
+    <button ion-button block color="secundary"
+            (click)="irRoot()">Ir al root con evento</button>
+    <button ion-button block color="danger"
+            navPop>Ir atras con HTML</button>
 </ion-content>

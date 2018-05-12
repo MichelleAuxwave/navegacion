@@ -13,4 +13,12 @@ export class Pagina3Page {
     this.sint = this.navParams.get("sinthe");
   }
 
+  irAtras(){
+    this.navCtrl.pop();
+  }
+
+  irRoot(){
+    this.navCtrl.popToRoot();
+  }
+
 }
